@@ -4,7 +4,7 @@ import menuRouter from './route/menuRouter.js';
 import tableCustomer from './route/tableCustomerRouter.js'
 const app = express();
 
-const port = 4000;
+const port = process.env.PORT ||  4000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
